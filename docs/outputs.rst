@@ -19,7 +19,7 @@ _seg.npy output
 - *chan_choose* : channels that you chose in GUI (0=gray/none, 1=red, 2=green, 3=blue)
 - *ismanual* : element *k* = whether or not mask *k* was manually drawn or computed by the cellpose algorithm
 - *flows* : flows[0] is XY flow in RGB, flows[1] is the cell probability in range 0-255 instead of 0.0 to 1.0, flows[2] is Z flow in range 0-255 (if it exists, otherwise zeros), 
-            flows[3] is [dY, dX, cellprob] (or [dZ, dY, dX, cellprob] for 3D), flows[4] is pixel destinations (for internal use)
+            flows[3] is [dY, dX, cellprob] (or [dZ, dY, dX] for 3D), flows[4] is pixel destinations (for internal use)
 - *est_diam* : estimated diameter (if run on command line)
 - *zdraw* : for each mask, which planes were manually labelled (planes in between manually drawn have interpolated masks)
 
